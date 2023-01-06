@@ -35,9 +35,11 @@ body{
 
 .InformacionNomada{
      position: relative;
+     
      display: flex;
      flex-direction: column;
-     justify-content: center;
+     justify-content: space-around;
+     align-items: center;
      color: #fff;
 }
 
@@ -141,4 +143,45 @@ body{
 
 .quienes-somos_video{
      width: 100%;
+}
+
+.footer{
+     width: 100%;
+}
+
+.footer-top{
+     background-image: url( ../img/Top\ footer.png );
+     background-position: center; 
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     height: 50rem;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.footer-bottom{
+     width: 100%;
+     background-color: #0C1011;
+     color: white;
+}
+
+.footer-bottom_topSite{
+     margin: auto;
+     width: 50%;
+     padding: 2rem;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-items: center;
+     gap: 5rem;
+}
+
+.footer-bottom_bottomSite{
+     margin: auto;
+     width: 50%;
+     padding: 2rem;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
 }
