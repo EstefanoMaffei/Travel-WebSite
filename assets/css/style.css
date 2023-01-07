@@ -1,49 +1,80 @@
 body{
      background-color: #d7fff12a;
+     font-family: 'Lato', sans-serif;
 }
 
-
-
-.navegacion{
-     background-image: url(/assets/img/Hero\ section.jpg);
-     background-position: center;
-     background-size: cover;
-     background-size: 100%;
-     width: 100%;
-     height: 40rem;
+span{
+     color: #F5B963;
 }
+
+/* NAVEGACION */
 
 .navegacion-texto{
+     position: fixed;
+     width: 100%;
      text-transform: uppercase;
+     color:black;
      display: flex;
      align-items: center;
      justify-content: space-around;
      background-color: #fff;
+     z-index: 100000;
+}
+
+.sticky{
+     position: fixed;
+     width: 100%;
+     background-color: #fff;
+}
+
+.sticky .navegacion-texto{
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .navegacion-texto_links{
      display: flex;
      gap: 3rem;
 }
-
-.backGroundNavegador{
-     position: absolute;
-     background-color: rgba(0, 0, 0, 0.5);
-     width: 100%;
-     height: 58.5%;
+.navegacion-texto_links a{
+     color:black;
 }
 
-.InformacionNomada{
-     position: relative;
+.backGroundNavegador, .testimoniales{
      
+     background-image: url(/assets/img/Hero\ section.jpg);
+     filter: brightness(50%);
+     background-position: center;
+     background-size: cover;
+     background-size: 100%;
+     width: 100%;
+     height: 51rem;
+}
+
+.InformacionNomada, .testimoniales-texto{
+     position: absolute;
+     top: 50%;
+     left: 5rem;
+     margin: auto;
      display: flex;
      flex-direction: column;
-     justify-content: space-around;
-     align-items: center;
+     text-align: left;
+     justify-content: space-between;
      color: #fff;
 }
 
+.InformacionNomada h3{
+     font-size: 3rem;
+     text-transform: uppercase;
+}   
 
+.InformacionNomada p, .testimoniales-texto p{
+     width: 60%;
+     margin-top: 2rem;
+}   
+
+/* BUSCADOR DE VIAJES */
 
 .buscadorViaje{
      position: relative;
@@ -63,34 +94,41 @@ body{
 
 .buscadorViaje input{
      border: none;
-     background-color: rgba(0, 0, 0, 0.3);
+     background-color: rgba(0, 0, 0, 0.1);
      width: 20%;
      padding: 1rem;
-
 }
+
+
+/* CARTAS VISUAL */
 
 .descubre-Cartas{
      background-color: #fff;
      width: 100%;
      margin: auto;
      padding: 5rem;
-     margin-top: 3rem;
-     margin-bottom: 0;
+     margin-top: 3.5rem;
+     margin-bottom: 5rem;
      padding-bottom: 0;
+
 }
 
 .descubre-Cartas h3{
-     text-transform: uppercase;
      margin-bottom: 2rem;
+}
+.descubre-Cartas p{
+     margin-bottom: 2.2rem;
+     border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
 }
 
 .descubre-Carta{
-     width: 80;
+     width: 80%;
+     margin: auto;
      display: flex;
      align-items: center;
      justify-content: center;
-
 }
+
 .descubre-Carta-lista{
      display: flex;
      flex-direction: column;
@@ -99,18 +137,13 @@ body{
      color: white;
      width: 30%;
      border-radius: 20px;
-
 }
 
 .descubre-Carta_texto{
      padding: 1rem;
 }
 
-.inpiracion-Carta{
-     width: 100%;
-     margin: auto;
-     padding: 5rem;
-}
+/* TESTIMONIALES */
 
 .testimoniales{
      background-image: url( ../img/Purple\ woman.jpg );
@@ -118,14 +151,9 @@ body{
      background-repeat: no-repeat;
      background-size: cover;
      position: relative;
-     width: 100%;
-     height: 50rem;
-
-     display: flex;
-     align-items: center;
-     flex-direction: column;
-     justify-content: right;
 }
+
+/* Quienes Somos */
 
 .quienes-somos{
      display: grid;
@@ -140,10 +168,17 @@ body{
      width: 50%;
      margin: auto;
 }
+.quienes-somos_texto h3{
+     margin-bottom: 2rem;
+     line-height: 3rem;
+     border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
 
 .quienes-somos_video{
      width: 100%;
 }
+
+
 
 .footer{
      width: 100%;
@@ -166,6 +201,10 @@ body{
      width: 100%;
      background-color: #0C1011;
      color: white;
+     display: flex;
+     justify-content: space-around;
+     padding: 5rem;
+     text-transform: uppercase;
 }
 
 .footer-bottom_topSite{
@@ -184,4 +223,10 @@ body{
      padding: 2rem;
      display: grid;
      grid-template-columns: 1fr 1fr;
+}
+
+.btnFooter{
+     border: none;
+     padding: 1.5rem;
+     background-color:#D4EEEC;
 }
