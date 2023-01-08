@@ -4,7 +4,8 @@ const header = document.querySelector('.navegacion-gen');
 
 window.addEventListener('scroll', ()=>{
      header.classList.toggle('sticky', window.scrollY>0);
-})
+});
+
 
 const crearCarta = () =>{
 
