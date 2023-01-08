@@ -7,6 +7,9 @@ span{
      color: #F5B963;
 }
 
+img{
+     width: 100%;
+}
 /* NAVEGACION */
 
 .navegacion-texto{
@@ -14,7 +17,7 @@ span{
      width: 100%;
      text-transform: uppercase;
      color:black;
-     display: flex;
+     display: block;
      align-items: center;
      justify-content: space-around;
      background-color: #fff;
@@ -143,15 +146,6 @@ span{
      padding: 1rem;
 }
 
-/* TESTIMONIALES */
-
-.testimoniales{
-     background-image: url( ../img/Purple\ woman.jpg );
-     background-position: center; 
-     background-repeat: no-repeat;
-     background-size: cover;
-     position: relative;
-}
 
 /* Quienes Somos */
 
@@ -225,8 +219,199 @@ span{
      grid-template-columns: 1fr 1fr;
 }
 
-.btnFooter{
+.btn-verde{
      border: none;
      padding: 1.5rem;
      background-color:#D4EEEC;
 }
+
+
+@media (max-width: 425px){
+  
+.navegacion-texto, .sticky{
+     position: relative;
+     width: 100%;
+     height: 30rem;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+
+}
+
+
+.navegacion-texto_links{
+     display: block;
+     padding: 0;
+     margin: 0;
+}
+.navegacion-texto_links li{
+     margin: 2rem;
+}
+
+.backGroundNavegador, .testimoniales{
+     position: relative;
+     background-image: url(/assets/img/Hero\ section.jpg);
+     filter: brightness(50%);
+     background-position: center;
+     background-size: cover;
+     width: 100%;
+     height: 50rem;
+}
+
+.InformacionNomada, .testimoniales-texto{
+     position: absolute;
+     top: 70%;
+     left: 0;
+     text-align: center; 
+}
+
+.InformacionNomada h3{
+     font-size: 3rem;
+     width: 90%;
+     margin: 2rem;
+     line-height: 4rem;
+}   
+
+.InformacionNomada p, .testimoniales-texto p{
+          width: 90%;
+          margin: auto;
+}   
+
+/* BUSCADOR DE VIAJES */
+
+.buscadorViaje{
+     position: relative;
+     width: 95%;
+     margin: auto;
+     background-color: #fff;
+     padding: 1rem;
+     margin-top: -4rem;
+
+     display: block;
+
+
+     -webkit-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
+     box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
+}
+
+.buscadorViaje input{
+     border: none;
+     background-color: rgba(0, 0, 0, 0.1);
+     margin: 1rem;
+     width: 90%;
+     padding: 1rem;
+}
+
+
+/* CARTAS VISUAL */
+
+.descubre-Cartas{
+     width: 100%;
+     margin: auto;
+     padding: 2rem;   
+}
+
+.descubre-Cartas h3{
+     line-height: 4rem;
+     text-align: center;
+}
+.descubre-Cartas p{
+     text-align: center;
+}
+
+.descubre-Carta{
+     width: 100%;
+     margin: auto;
+     display: block;
+}
+
+
+.descubre-Carta-lista{
+     display: block;
+     border: solid;
+     background-color: #2B3030;
+     color: white;
+     width: 100%;
+     border-radius: 20px;
+}
+
+.descubre-Carta_texto{
+     padding: 1rem;
+}
+
+
+/* Quienes Somos */
+
+.quienes-somos{
+     display: block;
+     padding: 2rem;
+     margin: auto;
+     
+}
+
+.quienes-somos_texto{
+     display: block;
+     width: 95%;
+     margin: auto;
+}
+
+
+.quienes-somos_video{
+     display: none;
+}
+
+
+
+.footer{
+     width: 100%;
+}
+
+.footer-top{
+     background-image: url( ../img/Top\ footer.png );
+     background-position: center; 
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     height: 50rem;
+     color: white;
+     display: block;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.footer-bottom{
+     width: 100%;
+     background-color: #0C1011;
+     color: white;
+     display: block;
+     justify-content: space-around;
+     padding: 5rem;
+     text-transform: uppercase;
+}
+
+.footer-bottom_topSite{
+     margin: auto;
+     width: 50%;
+     padding: 2rem;
+     display: block;
+     align-items: center;
+
+}
+
+.footer-bottom_bottomSite{
+     margin: auto;
+     width: 50%;
+     padding: 2rem;
+     display: block;
+
+}
+
+.btn-verde{
+     border: none;
+     padding: 1.5rem;
+     background-color:#D4EEEC;
+}
+
+} 
